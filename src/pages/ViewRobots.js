@@ -1,7 +1,9 @@
 import { Divider, CardMedia, Card, CardHeader, Grid, Box } from '@mui/material';
 import { Link } from 'react-router-dom';
 
-export default function ViewRobots({ robots }) {
+export default function ViewRobots() {
+  const robots = JSON.parse(localStorage.getItem('robots'));
+
   return (
     <Box sx={{ display: 'flex', justifyContent: 'center' }}>
       <Grid container spacing={3} sx={{ marginTop: 10, maxWidth: '80%' }}>
