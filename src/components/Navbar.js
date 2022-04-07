@@ -1,17 +1,11 @@
 import React from 'react';
-import {
-  Link,
-  Toolbar,
-  Container,
-  Button,
-  Box,
-  AppBar,
-} from '@mui/material';
+import { Toolbar, Container, Button, Box, AppBar } from '@mui/material';
+import { Link } from 'react-router-dom';
 
-export default function Navbar() {
+export default function Navbar({ children }) {
   return (
     <>
-      <AppBar position='fixed' elevation={0} style={{ zIndex: 1201 }}>
+      <AppBar position='fixed' elevation={0}>
         <Toolbar>
           <Container
             maxWidth={false}
@@ -24,32 +18,33 @@ export default function Navbar() {
               alignContent: 'center',
             }}
           >
-            <Link href='/app'>
-              <Button size='large' sx={{ color: 'white' }}>Robot Rampage</Button>
+            <Link to='/app'>
+              <Button size='large' sx={{ color: 'white' }}>
+                Robot Rampage
+              </Button>
             </Link>
             <Box
               display='flex'
               flexDirection='row'
               justifyContent='space-between'
             >
-              <Button
-                variant='contained'
-                color='error'
-                sx={{ marginRight: 2 }}
-              >
+              <Button variant='contained' color='error' sx={{ marginRight: 2 }}>
                 Fight
               </Button>
-              <Button
-                variant='contained'
-                color='success'
-                sx={{ marginRight: 2 }}
-              >
-                New Robot
-              </Button>
+              <Link to='/new-robot'>
+                <Button
+                  variant='contained'
+                  color='success'
+                  sx={{ marginRight: 2 }}
+                >
+                  New Robot
+                </Button>
+              </Link>
             </Box>
           </Container>
         </Toolbar>
       </AppBar>
+      {children}
     </>
   );
 }
