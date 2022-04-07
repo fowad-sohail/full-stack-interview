@@ -4,9 +4,13 @@ import Navbar from './components/Navbar';
 import ViewRobots from './pages/ViewRobots';
 import ViewSingleRobot from './pages/ViewSingleRobot';
 import CreateRobot from './pages/CreateRobot';
-import data from './robots.json'
+import data from './robots.json';
+import React from 'react';
 
 export default function App() {
+  React.useEffect(() => {
+    localStorage.setItem('robots', JSON.stringify(data));
+  });
   return (
     <>
       <Router>
