@@ -12,6 +12,12 @@ export default function ViewSingleRobot() {
   const location = useLocation();
   const { robot } = location.state;
 
+  const deleteHandler = (e) => {
+    const storage = JSON.parse(localStorage.getItem('robots'));
+    const newStorage = storage.filter((value) => value.id !== robot.id);
+    localStorage.setItem('robots', JSON.stringify(newStorage));
+  };
+
   return (
     <Box
       sx={{
@@ -66,10 +72,12 @@ export default function ViewSingleRobot() {
           />
         </Grid>
       </Grid>
-      <Box sx={{ marginTop: 3, display: "flex", flexDirection: 'row-reverse' }}>
-        <Button>Delete</Button>
+      <Box sx={{ marginTop: 3, display: 'flex', flexDirection: 'row-reverse' }}>
         <Link to='/app'>
-        <Button>Back</Button>
+          <Button onClick={() => deleteHandler()}>Delete</Button>
+        </Link>
+        <Link to='/app'>
+          <Button>Back</Button>
         </Link>
       </Box>
     </Box>
