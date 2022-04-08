@@ -9,6 +9,7 @@
 - Write unit tests
 - Improve styling and UI
 - Implement better robot fighting mechanism
+- State management (likely React.Context)
 
 ## Local Development
 ### Install dependencies:
