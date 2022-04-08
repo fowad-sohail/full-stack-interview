@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "robot1": "Robot Downey Jr",
+    "robot2": "Wall-E",
+    "winner": "Robot Downey Jr."
+  },
+  {
+    "id": 2,
+    "robot1": "C3PO",
+    "robot2": "Robot Downey Jr.",
+    "winner": "C3PO"
+  },
+  {
+    "id": 3,
+    "robot1": "C3PO",
+    "robot2": "R2D2",
+    "winner": "R2D2"
+  },
+  {
+    "id": 4,
+    "robot1": "iPhone",
+    "robot2": "Macbook Pro",
+    "winner": "Macbook Pro"
+  },
+  {
+    "id": 5,
+    "robot1": "iPhone",
+    "robot2": "Macbook Pro",
+    "winner": "Macbook Pro"
+  }
+]

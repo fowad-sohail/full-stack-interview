@@ -28,9 +28,15 @@ export default function Navbar({ children }) {
               flexDirection='row'
               justifyContent='space-between'
             >
-              <Button variant='contained' color='error' sx={{ marginRight: 2 }}>
-                Fight
-              </Button>
+              <Link to='/robot-fight'>
+                <Button
+                  variant='contained'
+                  color='error'
+                  sx={{ marginRight: 2 }}
+                >
+                  Fight
+                </Button>
+              </Link>
               <Link to='/new-robot'>
                 <Button
                   variant='contained'
