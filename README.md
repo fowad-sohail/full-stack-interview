@@ -1,4 +1,5 @@
 # Fowad Sohail Aperture Education Take Home
+Please see crude wireframes in `/docs`
 
 ## Design Decisions
 - Material UI component library
