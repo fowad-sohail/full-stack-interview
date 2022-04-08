@@ -1,36 +1,36 @@
 [
-  {
+  { "id": 1,
     "name": "Robot Downey Jr.",
     "color": "Silver",
     "attack": "12",
     "defense": "43"
   },
-  {
-    "name": "Robot Downey Jr.",
+  { "id": 2,
+    "name": "R2D2",
     "color": "Silver",
     "attack": "1",
     "defense": "234"
   },
-  {
-    "name": "Robot Downey Jr.",
+  { "id": 3,
+    "name": "C3PO",
     "color": "Silver",
     "attack": "32",
     "defense": "23"
   },
-  {
-    "name": "Robot Downey Jr.",
+  { "id": 4,
+    "name": "Wall-E",
     "color": "Silver",
     "attack": "2",
     "defense": "41"
   },
-  {
-    "name": "Robot Downey Jr.",
+  { "id": 5,
+    "name": "Macbook Pro",
     "color": "Silver",
     "attack": "124",
     "defense": "76"
   },
-  {
-    "name": "Robot Downey Jr.",
+  { "id": 6,
+    "name": "iPhone",
     "color": "Silver",
     "attack": "21",
     "defense": "65"
